@@ -4,6 +4,13 @@ import (
 	"errors"
 )
 
+// https://github.com/jetify-com/typeid-go/blob/b8c05c2056f37277c432df51e42f5b0176241a5f/base32/base32.go
+
+// Encoding and Decoding code based on the go implementation of ulid
+// found at: https://github.com/oklog/ulid
+// (Copyright 2016 The Oklog Authors)
+// Modifications made available under the same license as the original
+
 const alphabet = "0123456789abcdefghjkmnpqrstvwxyz"
 
 func encode(src [16]byte) string {
