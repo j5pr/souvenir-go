@@ -1,4 +1,4 @@
-module jasperlabs.net/souvenir
+module jasperlabs.net/pkg/souvenir
 
 go 1.23.4
 
